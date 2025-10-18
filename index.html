@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="titulo" class="hepta-regular">Better Reading</h1>
+    </header>
+    <div class="content">
+        <div id="toast-container"></div>
+        <div class="inputs">
+            <h2 class="subtitle">Escribe o pega tu texto en este recuadro:</h2>
+            <div class="txtwrapper">
+                <div class="toolbar">
+                    <button class="editorBtn" id="alignLeftBtn"><img class="symbols" src="assets/justify-right.png"
+                            alt="Icon justify right" /></button>
+                    <button class="editorBtn" id="alignCenterBtn"><img class="symbols" src="assets/align-center.png"
+                            alt="Icon align center" /></button>
+                    <button class="editorBtn" id="alignRightBtn"><img class="symbols" src="assets/justify-left.png"
+                            alt="Icon justify left" /></button>
+                </div>
+
+                <div id="editor" contenteditable="true" class="editor" tabindex="0"></div>
+            </div>
+        </div>
+        <div class="inputs">
+            <h2 class="subtitle">Resultado:</h2>
+            <div class="txtwrapper">
+                <div id="output" class="result-box"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="clearBtn" class="actionBtn hepta-regular">Limpiar texto</button>
+            <button id="exportPdfBtn" class="actionBtn hepta-regular">Exportar a PDF</button>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/MRodriguez3751" target="_blank"><img src="assets/icons/github-mark-white.png"
+                alt="Github Link" /></a>
+    </footer>
+</body>
+
+</html>
