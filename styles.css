@@ -14,16 +14,16 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  color: #000;
+  color: #121b24;
   display: grid;
   grid-template: auto 1fr auto;
-  background-color: #689bcd;
+  background-color: #efcdbc;
   min-height: 100vh;
 }
 
 header {
   padding: 1.5rem 1rem;
-  background-color: #5284bd;
+  background-color: #e4aa8c;
   display: flex;
   margin-bottom: auto;
   align-items: center;
@@ -34,7 +34,8 @@ h1 {
   margin: 0;
   padding: 0;
   font-size: 2rem; 
-  color: #b0ceea;
+  color: #121b24;
+  font-weight: 500;
 }
 
 h2 {
@@ -43,7 +44,7 @@ h2 {
   font-size: 1.5rem; 
   font-weight: normal;
   text-align: center;
-  color: #b0ceea;
+  color: #121b24;
 }
 
 .content {
@@ -78,20 +79,22 @@ h2 {
   height: clamp(7.5rem, calc(100vh - 150px), 15.625rem); 
   padding: 0.8rem;
   background: white;
-  color: #81a5f7;
+  color: #121b24;
   border-radius: 0.5rem; 
   min-height: 6.25rem; 
   font-size: 1em;
   font-family: "Hepta Slab", serif;
   line-height: 1.6;
+  word-break: break-all;
+  white-space: pre-wrap;
   overflow-wrap: break-word;
   overflow-y: auto;
   scrollbar-width: thin;
 }
 
 strong{
-  font-weight: bold;
-  color: #356ab5;
+  font-weight: 900;
+  color: #020202;
 }
 
 .buttons {
@@ -104,7 +107,7 @@ strong{
 footer {
   margin-top: auto;
   padding: 1rem;
-  background-color: #5284bd;
+  background-color: #e4aa8c;
   color: #040d16;
   align-items: center;
   justify-content: center;
@@ -115,15 +118,16 @@ footer {
 }
 
 .editorBtn {
-  background-color: #729bd1;
-  color: white;
+  background-color: #e4aa8c;
+  color: #121b24;
   padding: 1rem 1rem 0.5rem;
 }
 
 .actionBtn {
   border-radius: 1.5rem;
-  background-color: #356ab5;
-  color: #fff;
+  background-color: #e4aa8c;
+  color: #121b24;
+  font-weight: bold;
   padding: 1rem 2rem;
 }
 
@@ -193,7 +197,7 @@ img:hover {
   width: 100%;
   min-height: fit-content;
   gap: 0;
-  background-color: #729bd1;
+  background-color: #e4aa8c;
   opacity: 0.75;
   border-radius: 0.375rem; 
 }
@@ -204,14 +208,17 @@ img:hover {
   min-height: 12.5rem; 
   padding: 0.8rem;
   border: 1px solid #ccc;
-  color: #81a5f7;
+  color: #121b24;
   border-radius: 0.375rem;
   font-size: 1em;
   font-family: "Hepta Slab", serif;
   outline: none;
   line-height: 1.5;
+  word-break: break-all;
+  white-space: pre-wrap; 
   overflow-wrap: break-word;
   overflow-y: auto;
+  overflow-x: none;
 }
 
 @media (max-width: 600px) {
